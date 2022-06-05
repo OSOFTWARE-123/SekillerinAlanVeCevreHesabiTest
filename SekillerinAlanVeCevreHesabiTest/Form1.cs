@@ -9,9 +9,26 @@ namespace SekillerinAlanVeCevreHesabiTest
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            cox.Items.Clear();
-            cox.Items.Add("Üçgen");
-            cox.Items.Add("Dörtgen");
+            comboShape.Items.Clear();
+            comboShape.Items.Add("Üçgen");
+            comboShape.Items.Add("Dörtgen");
+            comboShape.SelectedIndex = 0;
+
+            comboProc.Items.Clear();
+            comboProc.Items.Add("Alan Hesapla");
+            comboProc.Items.Add("Çevre Hesapla");
+            comboProc.SelectedIndex = 0;
+        }
+
+        private void btnHesap_Click(object sender, EventArgs e)
+        {
+            if (comboShape.SelectedIndex == 0)
+            {
+                if (comboProc.SelectedIndex == 0)
+                {
+                    Ucgen ucgen = new Ucgen(1.0, 1.0);
+                }
+            }
         }
     }
 }
