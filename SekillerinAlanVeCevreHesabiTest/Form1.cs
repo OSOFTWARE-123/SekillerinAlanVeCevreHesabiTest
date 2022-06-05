@@ -22,13 +22,7 @@ namespace SekillerinAlanVeCevreHesabiTest
 
         private void btnHesap_Click(object sender, EventArgs e)
         {
-            if (comboShape.SelectedIndex == 0)
-            {
-                if (comboProc.SelectedIndex == 0)
-                {
-                    Ucgen ucgen = new Ucgen(1.0, 1.0);
-                }
-            }
+            
         }
     }
 }
